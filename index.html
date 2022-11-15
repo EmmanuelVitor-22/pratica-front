@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>NewsLetter</title>
+</head>
+
+<body>
+    <form class="newsletter-form">
+        <div class="newsletter-form-field">
+            <label class="newsletter-label" for="name">Digite seu nome:</label>
+            <input class="newsletter-input" id="name" name="name" class="name-user" type="text" />
+        </div>
+
+        <div class="newsletter-form-field">
+            <label class="newsletter-label" for="name">Digite seu email:</label>
+            <input class="newsletter-input" id="email" name="email" class="email-user" type="email" />
+        </div>
+        <!-- para estilizar o radiobutton criarei um input falso acima dos originais -->
+        <fieldset class="newsletter-form-fieldset">
+            <legend class="newsletter-form-legend">Gênero</legend>
+
+            <div class="newsletter-form-fake-input-wrapper">
+                <input type="radio" name="ranger" id="female" class="genere-user"><!-- input original -->
+                <label class="newsletter-label-input-radio" for="female">Feminino</label>
+                <div class="newsletter-form-fake-input"></div>
+            </div>
+            <div class="newsletter-form-fake-input-wrapper">
+                <input type="radio" name="ranger" id="male" class="genere-user">
+                <label class="newsletter-label-input-radio" for="male">Masculino</label>
+                <div class="newsletter-form-fake-input"></div>
+            </div>
+        </fieldset>
+        <button class="btn-enviar" type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
